@@ -42,87 +42,13 @@ A simple internal expense tracking tool built with Next.js, PostgreSQL, and Auth
    npm install
    ```
 
-3. **Set up environment variables**
-
-   Copy `.env` and update the values:
-
-   ```env
-   DATABASE_URL="postgresql://username:password@localhost:5432/xenfi_expense_manager"
-   NEXTAUTH_SECRET="your-secret-key-here"
-   NEXTAUTH_URL="http://localhost:3000"
-   ```
-
-   For production (Vercel + Neon):
-
-   ```env
-   DATABASE_URL="postgresql://username:password@hostname:5432/database?sslmode=require"
-   NEXTAUTH_SECRET="your-secret-key-here"
-   NEXTAUTH_URL="https://your-domain.vercel.app"
-   ```
-
-4. **Set up the database**
-
-   ```bash
-   # Generate Prisma client
-   npx prisma generate
-
-   # Run migrations
-   npx prisma migrate dev --name init
-
-   # (Optional) Seed the database
-   npm run db:seed
-   ```
-
-5. **Start the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Database Schema
-
-### Models
-
-- **User**: Authentication and user data
-- **Category**: Expense categories
-- **Expense**: Individual expense records
-
-### Relationships
-
-- User has many Expenses
-- Category has many Expenses
-- Expense belongs to User and Category
-
-## API Routes
-
-### Authentication
-
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/[...nextauth]` - NextAuth handlers
-
-### Categories
-
-- `GET /api/categories` - List all categories
-- `POST /api/categories` - Create new category
-
-### Expenses
-
-- `GET /api/expenses` - List user's expenses
-- `POST /api/expenses` - Create new expense
-
 ## Deployment
 
 ### Vercel + Neon
 
-1. **Create Neon database**
+1. **Created Neon database**
 
-   - Sign up at [neon.tech](https://neon.tech)
-   - Create a new project
-   - Copy the connection string
-
-2. **Deploy to Vercel**
+2. **Deployed to Vercel**
 
    - Connect your GitHub repository
    - Add environment variables in Vercel dashboard
@@ -149,15 +75,6 @@ A simple internal expense tracking tool built with Next.js, PostgreSQL, and Auth
 
 4. **Track Expenses**
    - Record new expenses with amounts, categories, dates, and payment methods
-
-## Demo Account
-
-If seeded, use:
-
-- Email: `demo@example.com`
-- Password: `password123`
-
-## Development
 
 ### Available Scripts
 
@@ -202,7 +119,3 @@ src/
 3. Make your changes
 4. Run tests and linting
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
