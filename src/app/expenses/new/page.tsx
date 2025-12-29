@@ -104,7 +104,7 @@ export default function NewExpensePage() {
                           required
                           step="0.01"
                           min="0"
-                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border"
+                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border text-gray-900"
                           value={amount}
                           onChange={(e) => setAmount(e.target.value)}
                           placeholder="0.00"
@@ -122,7 +122,7 @@ export default function NewExpensePage() {
                           id="paymentMethod"
                           name="paymentMethod"
                           required
-                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-gray-900"
                           value={paymentMethod}
                           onChange={(e) => setPaymentMethod(e.target.value)}
                         >
@@ -146,7 +146,7 @@ export default function NewExpensePage() {
                           id="category"
                           name="category"
                           required
-                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-gray-900"
                           value={categoryId}
                           onChange={(e) => setCategoryId(e.target.value)}
                         >
@@ -171,7 +171,7 @@ export default function NewExpensePage() {
                           name="date"
                           id="date"
                           required
-                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border"
+                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border text-gray-900"
                           value={date}
                           onChange={(e) => setDate(e.target.value)}
                         />
@@ -189,7 +189,7 @@ export default function NewExpensePage() {
                         id="description"
                         name="description"
                         rows={3}
-                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border"
+                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border text-gray-900"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder="Optional description..."

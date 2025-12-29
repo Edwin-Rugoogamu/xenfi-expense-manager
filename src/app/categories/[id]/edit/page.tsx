@@ -117,7 +117,7 @@ export default function EditCategoryPage() {
                           name="name"
                           id="name"
                           required
-                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border"
+                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border text-gray-900"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           placeholder="Category name"
@@ -136,7 +136,7 @@ export default function EditCategoryPage() {
                         id="description"
                         name="description"
                         rows={3}
-                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border"
+                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md px-3 py-2 border text-gray-900"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder="Optional description..."
