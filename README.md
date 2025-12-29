@@ -27,6 +27,11 @@ A simple internal expense tracking tool built with Next.js, PostgreSQL, and Auth
 - Node.js 18+
 - PostgreSQL database (local or Neon)
 
+### Test Credentials
+
+- email : bella@gmail.com
+- Password: Rugoogamu123#
+
 ### Installation
 
 1. **Clone the repository**
